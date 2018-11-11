@@ -8,10 +8,27 @@
         canvas.width= 1250
         var h = canvas.height
         var w = canvas.width
+        var y = 250 //change this to whatever we want the y cordinate of the circle to be determined by
+        var x = 250 //  ^^ but x
+        function draw(){
+            ctx.beginPath();
+            ctx.arc(x,y,50,0,2*Math.PI);
+            ctx.fill()
+        }
+
+
         ctx.fillRect(0,0,1250,25);
         ctx.fillRect(0,0,25,650);
-        ctx.fillRect(0,630,1250,25);
         ctx.fillRect(1230,0,25,650);
+        ctx.fillStyle= "red"
+        ctx.fillRect(0,630,1250,25);
+        ctx.fillStyle= "gray"
+        ctx.fillRect(612.5,630,25,-300);
+
+        ctx.beginPath();
+        ctx.arc(100,75,50,0,2*Math.PI);
+        ctx.fill()
+            
         </script>
     </body>
 </html>
